@@ -191,18 +191,28 @@
             font-size: 13px;
         }
 
-        .education {
-            max-width: 750px;
+        .education-container {
+            max-width: 850px;
             margin: auto;
-            text-align: center;
+            display: grid;
+            gap: 20px;
+        }
+
+        .education-card {
             background: white;
-            padding: 30px;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 15px rgba(0,0,0,0.08);
         }
 
-        .education h3 {
+        .education-card h3 {
             color: #4f46e5;
+            margin-bottom: 8px;
+        }
+
+        .education-card p {
+            color: #666;
+            margin: 4px 0;
         }
 
         .certificates {
@@ -221,6 +231,11 @@
         .certificate h3 {
             color: #4f46e5;
             font-size: 18px;
+        }
+
+        .certificate p {
+            color: #666;
+            margin-top: 5px;
         }
 
         #contact {
@@ -295,7 +310,7 @@
 
             <p>
                 Final-year B.Tech student specializing in Artificial Intelligence
-                and Machine Learning, with a strong interest in Python, SQL,
+                and Machine Learning, with an interest in Python, Java, SQL,
                 Machine Learning and practical AI solutions.
             </p>
 
@@ -326,10 +341,10 @@
 
             <p>
                 My current interests include Artificial Intelligence,
-                Machine Learning, Python, SQL, Generative AI and intelligent
-                applications. I am continuously improving my technical and
-                communication skills while preparing for a career in the
-                technology industry.
+                Machine Learning, Generative AI, Full Stack Development
+                and intelligent applications. I am continuously improving
+                my technical and communication skills while preparing for
+                a career in the technology industry.
             </p>
         </div>
     </section>
@@ -345,7 +360,11 @@
         <div class="skills">
             <div class="skill">Python</div>
             <div class="skill">Java</div>
+            <div class="skill">JavaScript</div>
             <div class="skill">SQL</div>
+            <div class="skill">MongoDB</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
             <div class="skill">Machine Learning</div>
             <div class="skill">Artificial Intelligence</div>
             <div class="skill">Generative AI</div>
@@ -402,8 +421,8 @@
                 <h3>NagrikSeva</h3>
 
                 <p>
-                    A multilingual voice assistant concept designed to help
-                    users access government-related services through a simple
+                    A multilingual voice assistant designed to help users
+                    access government-related services through a simple
                     conversational interface.
                 </p>
 
@@ -435,27 +454,48 @@
     <section id="education">
         <div class="section-title">
             <h2>Education</h2>
+            <p>My academic background</p>
         </div>
 
-        <div class="education">
-            <h3>B.Tech — Artificial Intelligence & Machine Learning</h3>
+        <div class="education-container">
 
-            <p>
-                St. Mary's Group of Institutions
-            </p>
+            <div class="education-card">
+                <h3>B.Tech — Artificial Intelligence & Machine Learning</h3>
 
-            <p>
-                Final Year
-            </p>
+                <p><strong>St. Mary's Group of Institutions, Hyderabad</strong></p>
 
-            <p>
-                CGPA: 8.1
-            </p>
+                <p>Bachelor of Technology</p>
+
+                <p>CGPA: 8.1</p>
+            </div>
+
+
+            <div class="education-card">
+                <h3>Intermediate — MPC</h3>
+
+                <p><strong>Racharla Junior College</strong></p>
+
+                <p>2021 – 2023</p>
+
+                <p>Percentage: <strong>96%</strong></p>
+            </div>
+
+
+            <div class="education-card">
+                <h3>SSC</h3>
+
+                <p><strong>ZPHS, Mallareddypet</strong></p>
+
+                <p>2020 – 2021</p>
+
+                <p>CGPA: <strong>10</strong></p>
+            </div>
+
         </div>
     </section>
 
 
-    <!-- Certificates -->
+    <!-- Certifications -->
     <section id="certificates">
         <div class="section-title">
             <h2>Certifications</h2>
@@ -476,12 +516,12 @@
 
             <div class="certificate">
                 <h3>Cloud Computing Fundamentals</h3>
-                <p>IBM</p>
+                <p>IBM SkillsBuild</p>
             </div>
 
             <div class="certificate">
                 <h3>Generative AI</h3>
-                <p>IBM</p>
+                <p>IBM SkillsBuild</p>
             </div>
 
         </div>
@@ -492,7 +532,11 @@
     <section id="contact">
         <div class="section-title">
             <h2>Let's Connect</h2>
-            <p>I'm open to learning opportunities, internships and entry-level roles.</p>
+
+            <p>
+                I'm open to learning opportunities, internships and
+                entry-level roles.
+            </p>
         </div>
 
         <div class="contact-links">
